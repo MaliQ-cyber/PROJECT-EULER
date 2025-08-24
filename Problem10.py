@@ -6,13 +6,12 @@ def is_prime(n):
             return False
     return True
 
-count = 0
+sum = 0
 number = 2
 
-while True:
+while number < 2000001:
     if is_prime(number):
-        count += 1
-        if count == 10001:
-            print(number)   
-            break
+        sum += number
     number += 1
+
+print (sum)
